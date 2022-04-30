@@ -3,6 +3,9 @@
     --box-clr: rgb(188, 212, 222);
     --black: rgb(8, 8, 8);
     --font-clr: rgb(5, 25, 35);
+    --button-hover: rgb(205, 197, 211);
+    --button-clr: rgb(222, 217, 226);
+    --red-clr: red;
 }
 
 body {
@@ -15,7 +18,7 @@ body {
 .container {
     background-color: var(--box-clr);
     box-sizing: border-box;
-    width: 80%;
+    width: 70%;
     inset: 50%;
     border-radius: 20px;
     box-shadow: 10px 10px 20px var(--black, 0.4);
@@ -34,6 +37,7 @@ header {
     align-items: center;
     font-size: medium;
     font-weight: lighter;
+    flex-wrap: wrap;
 }
 .each-field input {
     border: none;
@@ -42,7 +46,30 @@ header {
 }
 .float {
     float: right;
+    width: 11rem;
 }
 .center {
     text-align: center;
+    padding: 1rem;
+}
+.button-area {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5rem;
+}
+.button {
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--button-clr);
+}
+.button:hover {
+    background-color: var(--button-hover);
+}
+
+p {
+    color: var(--red-clr);
+    font-size: xx-small;
+    flex-wrap: wrap;
+    display: none;
 }
