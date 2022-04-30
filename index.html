@@ -17,53 +17,54 @@
       <main>
         <form action="inputData">
           <section class="each-field">
-            <label for="fname">First Name:</label><br> </br>
+            <label for="fname">First Name:</label><br />
             <div class="float">
-              <input type="text" id="fname" name="fname" required/>
-              <p>Please enter a valid first name</p>
+              <input type="text" id="fname" name="fname" required />
+              <p class="firstName">Please enter a valid first name</p>
             </div>
           </section>
           <section class="each-field">
-            <label for="lname">Last Name:</label><br> </br>
+            <label for="lname">Last Name:</label><br />
             <div class="float">
-              <input type="text" id="lname" name="lname" required/>
-              <p>Please enter a valid last name</p>
+              <input type="text" id="lname" name="lname" required />
+              <p class="lastName">Please enter a valid last name</p>
             </div>
           </section>
           <section class="each-field">
-            <label for="email">Email:</label><br> </br>
+            <label for="email">Email:</label><br />
             <div class="float">
-              <input type="text" id="email" name="email" required/><p>Please enter a valid email ID</p>
+              <input type="text" id="email" name="email" required />
+              <p class="email">Please enter a valid email ID</p>
             </div>
           </section>
           <section class="each-field">
-            <label for="password">Password:</label><br> </br>
+            <label for="password">Password:</label><br />
             <div class="float">
-              <input
-                type="password"
-                id="password"
-                name="password" required
-              />
-              <p>Password should be of atleast 8 charactes including one uppercase alphabet, at least one symbol and one number</p>
+              <input type="password" id="password" name="password" required />
+              <p class="password">
+                Password should be of atleast 8 charactes including one
+                uppercase alphabet, at least one symbol and one number
+              </p>
             </div>
           </section>
           <section class="each-field">
-            <label for="confirm">Confirm Your Password:</label><br> </br>
+            <label for="confirm">Confirm Your Password:</label><br />
             <div class="float">
-              <input type="password" id="confirm" name="confirm" required/>
-              <p>Re-enter the same password</p>
+              <input type="password" id="confirm" name="confirm" required />
+              <p class="confirm">Re-enter the same password</p>
             </div>
           </section>
           <section class="center">
-              <input type="checkbox" id="checkbox" required>
-              <label for="checkbox">I agree to the terms & conditions</label>
+            <input type="checkbox" id="checkbox" required />
+            <label for="checkbox">I agree to the terms & conditions</label>
           </section>
           <section class="button-area">
-          <input type="submit" value="Sign Up" class="button" />
-          <input type="reset" value="Cancel" class="button" />
-        </section>
+            <input type="submit" value="Sign Up" class="button" />
+            <input type="reset" value="Cancel" class="button" />
+          </section>
         </form>
       </main>
     </div>
+    <script type="text/javascript" src="/app.js"></script>
   </body>
 </html>
