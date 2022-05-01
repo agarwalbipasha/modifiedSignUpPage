@@ -3,7 +3,7 @@ var submit = document.querySelector('input[type="submit"]');
 submit.addEventListener("click", formValidation);
 
 function formValidation(event) {
-  var regexName = /[A-Za-z]$/;
+  var regexName = /^[A-Za-z]+$/;
   var regexMail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
   var regexPassword = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
 
