@@ -50,7 +50,7 @@ function formValidation(event) {
   //Password validation
   var password = document.getElementById("password").value;
   var passwordWarning = document.querySelector(".password");
-  if (!regexPassword.test(password)) {
+  if (!regexPassword.test(password) && password.length >= 8) {
     passwordWarning.style.display = "block";
     passwordValid = false;
   } else {
@@ -85,6 +85,7 @@ function formValidation(event) {
     confirmValid &&
     checkboxValid
   ) {
-    document.getElementsByTagName("form")[0].reset();
+    alert("The form is submitted");
+    document.querySelector("form").reset();
   }
 }

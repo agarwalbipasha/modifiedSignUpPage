@@ -18,7 +18,7 @@ body {
 .container {
     background-color: var(--box-clr);
     box-sizing: border-box;
-    width: 70%;
+    width: 60%;
     inset: 50%;
     border-radius: 20px;
     box-shadow: 10px 10px 20px var(--black, 0.4);
@@ -43,10 +43,11 @@ header {
     border: none;
     padding: .5rem;
     border-radius: 10px;
+    width: 14rem;
 }
 .float {
     float: right;
-    width: 11rem;
+    width: 15rem;
 }
 .center {
     text-align: center;
@@ -74,7 +75,10 @@ p {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 670px) {
+    .container {
+        width: 80%;
+    }
     .each-field {
         flex-direction: column;
     }
