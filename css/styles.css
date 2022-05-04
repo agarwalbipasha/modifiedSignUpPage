@@ -1,6 +1,6 @@
 :root {
-    --background-clr: rgb(160, 185, 191);
-    --box-clr: rgb(188, 212, 222);
+    --background-clr: rgb(3, 74, 160);
+    --box-clr: rgb(240, 182, 127);
     --black: rgb(8, 8, 8);
     --font-clr: rgb(5, 25, 35);
     --button-hover: rgb(205, 197, 211);
@@ -70,7 +70,7 @@ header {
 
 p {
     color: var(--red-clr);
-    font-size: xx-small;
+    font-size: x-small;
     flex-wrap: wrap;
     display: none;
 }

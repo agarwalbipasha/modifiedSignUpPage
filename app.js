@@ -50,7 +50,7 @@ function formValidation(event) {
   //Password validation
   var password = document.getElementById("password").value;
   var passwordWarning = document.querySelector(".password");
-  if (!regexPassword.test(password) && password.length >= 8) {
+  if (!regexPassword.test(password) && password.length < 8) {
     passwordWarning.style.display = "block";
     passwordValid = false;
   } else {
